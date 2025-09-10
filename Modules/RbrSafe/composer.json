@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/rbrsafe",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\RbrSafe\\": "app/",
+            "Modules\\RbrSafe\\Database\\Factories\\": "database/factories/",
+            "Modules\\RbrSafe\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\RbrSafe\\Tests\\": "tests/"
+        }
+    }
+}

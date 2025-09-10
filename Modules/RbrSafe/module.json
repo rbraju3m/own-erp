@@ -1,0 +1,11 @@
+{
+    "name": "RbrSafe",
+    "alias": "rbrsafe",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RbrSafe\\Providers\\RbrSafeServiceProvider"
+    ],
+    "files": []
+}

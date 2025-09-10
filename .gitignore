@@ -1,0 +1,36 @@
+# Node & vendor
+/node_modules
+/vendor
+
+# Laravel
+/public/storage
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/app/*
+!/storage/app/public
+
+# Environment
+.env
+.env.*.backup
+
+# IDE / Editor
+/.idea
+/.vscode
+
+# Debug / Cache
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+
+# Homestead & Docker
+Homestead.json
+Homestead.yaml
+docker-compose.override.yml
+
+# Custom (if these are user uploads)
+/public/uploads/*
+/public/files
+/public/modules/*
