@@ -1,4 +1,3 @@
-{{--<nav class="navbar navbar-expand navbar-light bg-light fixed-top ms-250">--}}
     <nav class="navbar navbar-expand navbar-light bg-light print-header-content sticky-navbar">
     <ul class="navbar-nav me-auto">
         <li class="nav-item active">

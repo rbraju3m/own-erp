@@ -341,4 +341,28 @@ return [
     |--------------------------------------------------------------------------
     */
 
+    /*
+    |--------------------------------------------------------------------------
+    | own erp core part Start
+    |--------------------------------------------------------------------------
+    */
+    'UserManage' => 'User manage',
+    'Role' => 'Role',
+    'User' => 'User',
+    'UserList' => 'User List',
+    'Name' => 'Name',
+    'Email' => 'Email',
+    'CreateNew' => 'Create New',
+    'RoleList' => 'Role List',
+    'Permission' => 'Permission',
+    'NewRole' => 'New Role',
+    'SelectAll' => 'Select All',
+    'UnselectAll' => 'Unselect All',
+    'xxxxxx' => 'xxxxxxx',
+    /*
+    |--------------------------------------------------------------------------
+    | own erp core part End
+    |--------------------------------------------------------------------------
+    */
+
 ];

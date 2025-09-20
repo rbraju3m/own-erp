@@ -34,7 +34,7 @@
             <h3 class="card-title text-center">
                 <img class="card-title text-center" width="50%" src="{{asset('Appza.png')}}" alt="">
             </h3>
-            <h3 class="card-title text-center">Log in to Appza.</h3>
+            <h3 class="card-title text-center">Log in to ERP.</h3>
             <div class="card-text">                <form method="POST" action="{{ route('login') }}">
                 @csrf
                     <div class="form-group">

@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
 @section('body')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
 
                     <div class="card-header">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
-                            <h6>{{__('messages.roleList')}}</h6>
+                            <h6>{{__('messages.RoleList')}}</h6>
                             <div class="btn-toolbar mb-2 mb-md-0">
                                 <div class="btn-group me-2">
 
                                     <a href="{{route('role_add', app()->getLocale())}}" title="" class="module_button_header">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            <i class="fas fa-plus-circle"></i> {{__('messages.Add Button')}}
+                                            <i class="fas fa-plus-circle"></i> {{__('messages.CreateNew')}}
                                         </button>
                                     </a>
                                 </div>

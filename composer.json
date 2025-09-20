@@ -18,7 +18,8 @@
         "sentry/sentry-laravel": "^4.13",
         "spatie/laravel-activitylog": "^4.10",
         "spatie/laravel-backup": "^9.3",
-        "spatie/laravel-html": "^3.11"
+        "spatie/laravel-html": "^3.11",
+        "spatie/laravel-permission": "^6.21"
     },
     "require-dev": {
         "bennett-treptow/laravel-migration-generator": "^4.5",

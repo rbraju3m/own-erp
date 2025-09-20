@@ -33,16 +33,6 @@
 <body id="{{app()->getLocale()}}" class="app">
 
 
-
-{{--<div class="sidebar">
-    <div class="sidebar-inner">
-        <!-- logo part -->
-    @include('layouts.logo')
-    <!-- menu part -->
-        @include('layouts.nav')
-    </div>
-</div>--}}
-
 @include('layouts.nav')
 
 

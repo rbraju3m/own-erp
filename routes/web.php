@@ -11,9 +11,11 @@ use App\Http\Controllers\LayoutTypeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PluginController;
 use App\Http\Controllers\RequestLogController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SetupController;
 use App\Http\Controllers\StyleGroupController;
 use App\Http\Controllers\ThemeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -58,7 +60,7 @@ Route::prefix('admin')
 Route::post('/build-orders/{id}/delete-dir', [BuildOrderController::class, 'deleteBuildDir'])
     ->name('build-orders.delete-dir');
 
-Route::prefix('/appza')->middleware(['auth'])->group(function() {
+Route::prefix('/erp')->middleware(['auth'])->group(function() {
     // for download test
     Route::get('download/apk', [\App\Http\Controllers\Api\V1\ApkBuildHistoryController::class, 'downloadApk'])->name('download_apk');
     /* layout type route start */
@@ -190,5 +192,28 @@ Route::prefix('/appza')->middleware(['auth'])->group(function() {
         Route::get('list',[RequestLogController::class,'index'])->name('request_log_list');
     });
     /* request log route end */
+
+    // Role Routes
+    Route::controller(RoleController::class)->prefix('role')->group(function () {
+        Route::get('add', 'create')->name('role_add');
+        Route::get('list', 'index')->name('role_list');
+        Route::post('store', 'store')->name('role_store');
+        Route::get('edit/{id}', 'edit')->name('role_edit');
+        Route::patch('update/{id}', 'update')->name('role_update');
+        Route::delete('delete/{id}', 'roleDelete')->name('role_delete');
+    });
+
+// Special action (state change)
+    Route::patch('role/{id}/inactive', [RoleController::class, 'inactive'])
+        ->name('role_inactive');
+
+// User Routes
+    Route::controller(UserController::class)->prefix('user')->group(function () {
+        Route::get('list', 'index')->name('user_list');
+        Route::get('add', 'create')->name('user_add');
+        Route::post('store', 'store')->name('user_store');
+        Route::get('edit/{id}', 'edit')->name('user_edit');
+        Route::patch('update/{id}', 'update')->name('user_update');
+    });
 });
 
